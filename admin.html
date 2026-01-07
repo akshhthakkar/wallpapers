@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Panel - WallpaperVerse</title>
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/156109288?v=4"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700;800;900&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Admin Page Styles */
+      .admin-section {
+        min-height: 100vh;
+        padding: 8rem 2rem 4rem;
+      }
+
+      .admin-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .admin-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: var(--color-text);
+        margin: 1.5rem 0;
+        letter-spacing: 0.05em;
+        text-align: center;
+      }
+
+      /* Login Form */
+      .login-container {
+        max-width: 400px;
+        margin: 5rem auto;
+        text-align: center;
+      }
+
+      .login-form {
+        background: rgba(26, 26, 26, 0.8);
+        border: 2px solid var(--color-primary);
+        border-radius: 16px;
+        padding: 2.5rem;
+      }
+
+      .login-form input {
+        width: 100%;
+        padding: 1rem;
+        background: rgba(13, 13, 13, 0.9);
+        border: 2px solid rgba(0, 217, 255, 0.3);
+        color: var(--color-text);
+        font-family: var(--font-body);
+        font-size: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+
+      .login-form input:focus {
+        outline: none;
+        border-color: var(--color-primary);
+      }
+
+      .login-form button {
+        width: 100%;
+        padding: 1rem;
+        background: var(--color-primary);
+        border: none;
+        color: var(--color-bg);
+        font-family: var(--font-display);
+        font-size: 1.1rem;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .login-form button:hover {
+        background: var(--color-secondary);
+      }
+
+      /* Tabs */
+      .admin-tabs {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .admin-tab {
+        padding: 0.8rem 1.5rem;
+        background: transparent;
+        border: 2px solid var(--color-primary);
+        color: var(--color-text);
+        font-family: var(--font-display);
+        font-size: 0.95rem;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .admin-tab:hover,
+      .admin-tab.active {
+        background: var(--color-primary);
+        color: var(--color-bg);
+      }
+
+      /* Submissions Grid */
+      .submissions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .submission-card {
+        background: rgba(26, 26, 26, 0.8);
+        border: 2px solid rgba(0, 217, 255, 0.3);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .submission-card:hover {
+        border-color: var(--color-primary);
+        transform: translateY(-3px);
+      }
+
+      .submission-image {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .submission-info {
+        padding: 1rem;
+      }
+
+      .submission-title {
+        font-family: var(--font-display);
+        font-size: 1.1rem;
+        color: var(--color-text);
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.05em;
+      }
+
+      .submission-meta {
+        font-size: 0.85rem;
+        color: var(--color-text-dim);
+        margin-bottom: 1rem;
+      }
+
+      .submission-meta span {
+        display: block;
+        margin-bottom: 0.2rem;
+      }
+
+      .submission-actions {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      .btn-approve,
+      .btn-reject,
+      .btn-download {
+        flex: 1;
+        padding: 0.6rem;
+        border: none;
+        font-family: var(--font-display);
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .btn-approve {
+        background: rgba(0, 255, 136, 0.2);
+        color: #00ff88;
+        border: 1px solid #00ff88;
+      }
+
+      .btn-approve:hover {
+        background: #00ff88;
+        color: var(--color-bg);
+      }
+
+      .btn-reject {
+        background: rgba(255, 0, 60, 0.2);
+        color: var(--color-secondary);
+        border: 1px solid var(--color-secondary);
+      }
+
+      .btn-reject:hover {
+        background: var(--color-secondary);
+        color: white;
+      }
+
+      .btn-download {
+        background: rgba(0, 217, 255, 0.2);
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+      }
+
+      .btn-download:hover {
+        background: var(--color-primary);
+        color: var(--color-bg);
+      }
+
+      .status-badge {
+        display: inline-block;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-family: var(--font-display);
+        letter-spacing: 0.1em;
+        margin-bottom: 0.5rem;
+      }
+
+      .status-pending {
+        background: rgba(255, 193, 7, 0.2);
+        color: #ffc107;
+        border: 1px solid #ffc107;
+      }
+
+      .status-approved {
+        background: rgba(0, 255, 136, 0.2);
+        color: #00ff88;
+        border: 1px solid #00ff88;
+      }
+
+      .status-rejected {
+        background: rgba(255, 0, 60, 0.2);
+        color: var(--color-secondary);
+        border: 1px solid var(--color-secondary);
+      }
+
+      .empty-state {
+        text-align: center;
+        padding: 4rem 2rem;
+        color: var(--color-text-dim);
+      }
+
+      .empty-state svg {
+        width: 64px;
+        height: 64px;
+        color: var(--color-primary);
+        opacity: 0.5;
+        margin-bottom: 1rem;
+      }
+
+      .stats-bar {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-item .number {
+        font-family: var(--font-display);
+        font-size: 2rem;
+        color: var(--color-primary);
+      }
+
+      .stat-item .label {
+        font-size: 0.85rem;
+        color: var(--color-text-dim);
+        letter-spacing: 0.1em;
+      }
+
+      .logout-btn {
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        padding: 0.5rem 1rem;
+        background: transparent;
+        border: 1px solid var(--color-secondary);
+        color: var(--color-secondary);
+        font-family: var(--font-display);
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .logout-btn:hover {
+        background: var(--color-secondary);
+        color: white;
+      }
+
+      @media (max-width: 768px) {
+        .admin-section {
+          padding: 6rem 1rem 2rem;
+        }
+
+        .logout-btn {
+          top: 80px;
+          right: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="accent-lines"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a
+            href="index.html"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 0.8rem;
+              text-decoration: none;
+            "
+          >
+            <img
+              class="nav-avatar"
+              src="https://avatars.githubusercontent.com/u/156109288?v=4"
+              alt="Aksh Thakkar"
+            />
+            <span class="nav-brand" style="color: var(--color-primary)"
+              >WALLPAPER<span style="color: var(--color-secondary)"
+                >VERSE</span
+              ></span
+            >
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="admin-section" id="loginSection">
+      <div class="login-container">
+        <div class="section-badge">ADMIN</div>
+        <h1 class="admin-title">ADMIN LOGIN</h1>
+        <form class="login-form" id="loginForm">
+          <input
+            type="password"
+            id="adminPassword"
+            placeholder="Enter admin password"
+            required
+          />
+          <button type="submit">LOGIN</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Admin Dashboard (Hidden by default) -->
+    <section class="admin-section" id="dashboardSection" style="display: none">
+      <button class="logout-btn" onclick="logout()">LOGOUT</button>
+      <div class="admin-container">
+        <div class="section-badge">DASHBOARD</div>
+        <h1 class="admin-title">SUBMISSION MANAGEMENT</h1>
+
+        <!-- Stats -->
+        <div class="stats-bar" id="statsBar">
+          <div class="stat-item">
+            <div class="number" id="pendingCount">0</div>
+            <div class="label">PENDING</div>
+          </div>
+          <div class="stat-item">
+            <div class="number" id="approvedCount">0</div>
+            <div class="label">APPROVED</div>
+          </div>
+          <div class="stat-item">
+            <div class="number" id="rejectedCount">0</div>
+            <div class="label">REJECTED</div>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="admin-tabs">
+          <button
+            class="admin-tab active"
+            data-status="pending"
+            onclick="filterSubmissions('pending')"
+          >
+            PENDING
+          </button>
+          <button
+            class="admin-tab"
+            data-status="approved"
+            onclick="filterSubmissions('approved')"
+          >
+            APPROVED
+          </button>
+          <button
+            class="admin-tab"
+            data-status="rejected"
+            onclick="filterSubmissions('rejected')"
+          >
+            REJECTED
+          </button>
+        </div>
+
+        <!-- Submissions Grid -->
+        <div class="submissions-grid" id="submissionsGrid">
+          <div class="empty-state">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>No submissions yet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="firebase-config.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>

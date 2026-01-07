@@ -1,472 +1,791 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WallpaperVerse - Curated wallpapers Collection</title>
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/156109288?v=4"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700;800;900&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="canonical" href="https://akshthakkar.me/wallpapers/" />
+    <meta
+      name="google-site-verification"
+      content="7WTzwBrUfmv2YeeTAVq50cPYjgRaqGAwwaj_pJ-RTjk"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WallpaperVerse - Curated wallpapers Collection</title>
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/156109288?v=4" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700;800;900&family=Unbounded:wght@200..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="canonical" href="https://akshthakkar.me/wallpapers/" />
-  <meta name="google-site-verification" content="7WTzwBrUfmv2YeeTAVq50cPYjgRaqGAwwaj_pJ-RTjk" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Discover a curated collection of high-quality 4K and HD wallpapers featuring anime, Marvel, movies, cars, and more. Free download for desktop and mobile."
+    />
+    <meta
+      name="keywords"
+      content="wallpapers, 4k wallpapers, hd wallpapers, anime wallpapers, marvel wallpapers, movie wallpapers, desktop backgrounds, free wallpapers"
+    />
+    <meta name="author" content="Aksh Thakkar" />
 
-  <!-- SEO Meta Tags -->
-  <meta name="description"
-    content="Discover a curated collection of high-quality 4K and HD wallpapers featuring anime, Marvel, movies, cars, and more. Free download for desktop and mobile." />
-  <meta name="keywords"
-    content="wallpapers, 4k wallpapers, hd wallpapers, anime wallpapers, marvel wallpapers, movie wallpapers, desktop backgrounds, free wallpapers" />
-  <meta name="author" content="Aksh Thakkar" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akshthakkar.me/wallpapers/" />
+    <meta
+      property="og:title"
+      content="WallpaperVerse - Curated 4K & HD Wallpapers"
+    />
+    <meta
+      property="og:description"
+      content="Download high-quality wallpapers from your favorite anime, movies, and superhero universes. curated for perfection."
+    />
+    <meta
+      property="og:image"
+      content="https://akshthakkar.me/wallpapers/wallpapers/anime/demon-slayer-tanjiro-kamado-wallpaper.jpg"
+    />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://akshthakkar.me/wallpapers/" />
-  <meta property="og:title" content="WallpaperVerse - Curated 4K & HD Wallpapers" />
-  <meta property="og:description"
-    content="Download high-quality wallpapers from your favorite anime, movies, and superhero universes. curated for perfection." />
-  <meta property="og:image"
-    content="https://akshthakkar.me/wallpapers/wallpapers/anime/demon-slayer-tanjiro-kamado-wallpaper.jpg" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://akshthakkar.me/wallpapers/" />
+    <meta
+      property="twitter:title"
+      content="WallpaperVerse - Curated 4K & HD Wallpapers"
+    />
+    <meta
+      property="twitter:description"
+      content="Download high-quality wallpapers from your favorite anime, movies, and superhero universes. curated for perfection."
+    />
+    <meta
+      property="twitter:image"
+      content="https://akshthakkar.me/wallpapers/wallpapers/anime/demon-slayer-tanjiro-kamado-wallpaper.jpg"
+    />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://akshthakkar.me/wallpapers/" />
-  <meta property="twitter:title" content="WallpaperVerse - Curated 4K & HD Wallpapers" />
-  <meta property="twitter:description"
-    content="Download high-quality wallpapers from your favorite anime, movies, and superhero universes. curated for perfection." />
-  <meta property="twitter:image"
-    content="https://akshthakkar.me/wallpapers/wallpapers/anime/demon-slayer-tanjiro-kamado-wallpaper.jpg" />
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "WallpaperVerse",
-      "url": "https://akshthakkar.me/wallpapers/",
-      "description": "Curated collection of 4K and HD wallpapers.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://akshthakkar.me/wallpapers/#collections?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Aksh Thakkar",
-        "url": "https://github.com/akshhthakkar"
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "WallpaperVerse",
+        "url": "https://akshthakkar.me/wallpapers/",
+        "description": "Curated collection of 4K and HD wallpapers.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://akshthakkar.me/wallpapers/#collections?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Aksh Thakkar",
+          "url": "https://github.com/akshhthakkar"
+        }
       }
-    }
-  </script>
+    </script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  </head>
 
-<body>
-  <div class="accent-lines"></div>
-  <nav class="nav" id="mainNav">
-    <div class="nav-container">
-      <div class="nav-left">
-        <img class="nav-avatar" src="https://avatars.githubusercontent.com/u/156109288?v=4" alt="Aksh Thakkar" />
-        <span class="nav-brand" style="color: var(--color-primary)">WALLPAPER<span
-            style="color: var(--color-secondary)">VERSE</span></span>
+  <body>
+    <div class="accent-lines"></div>
+    <nav class="nav" id="mainNav">
+      <div class="nav-container">
+        <div class="nav-left">
+          <img
+            class="nav-avatar"
+            src="https://avatars.githubusercontent.com/u/156109288?v=4"
+            alt="Aksh Thakkar"
+          />
+          <span class="nav-brand" style="color: var(--color-primary)"
+            >WALLPAPER<span style="color: var(--color-secondary)"
+              >VERSE</span
+            ></span
+          >
+        </div>
+        <div class="nav-right">
+          <a href="#collections" class="nav-link">COLLECTIONS</a>
+          <a href="#about" class="nav-link">ABOUT</a>
+          <a
+            href="submit.html"
+            class="nav-link"
+            style="color: var(--color-secondary)"
+            >SUBMIT</a
+          >
+          <a
+            href="https://github.com/akshhthakkar/wallpapers"
+            class="btn-glitch"
+            target="_blank"
+            data-text="GITHUB"
+          >
+            <span>GITHUB</span>
+            <div class="cta-arrow">→</div>
+          </a>
+        </div>
+        <button
+          class="mobile-toggle"
+          aria-label="Toggle Menu"
+          onclick="toggleMenu()"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </div>
-      <div class="nav-right">
-        <a href="#collections" class="nav-link">COLLECTIONS</a>
-        <a href="#about" class="nav-link">ABOUT</a>
-        <a href="https://github.com/akshhthakkar/wallpapers" class="btn-glitch" target="_blank" data-text="GITHUB">
-          <span>GITHUB</span>
-          <div class="cta-arrow">→</div>
-        </a>
+    </nav>
+    <section class="hero">
+      <div class="hero-scatter-bg">
+        <span style="top: 10%; left: 5%; transform: rotate(-15deg)">ANIME</span>
+        <span style="top: 15%; right: 10%; transform: rotate(10deg)"
+          >MOVIES</span
+        >
+        <span style="bottom: 10%; left: 8%; transform: rotate(5deg)"
+          >HEROES</span
+        >
+        <span style="bottom: 15%; right: 5%; transform: rotate(-8deg)"
+          >VERSE</span
+        >
+        <span
+          style="top: 40%; left: -2%; transform: rotate(90deg); opacity: 0.02"
+          >WALLPAPERS</span
+        >
+        <span
+          style="top: 60%; right: -2%; transform: rotate(-90deg); opacity: 0.02"
+          >DESKTOP</span
+        >
+        <span
+          style="top: 5%; left: 40%; transform: rotate(-5deg); font-size: 2rem"
+          >4K</span
+        >
+        <span
+          style="
+            bottom: 5%;
+            right: 30%;
+            transform: rotate(8deg);
+            font-size: 2rem;
+          "
+          >HD</span
+        >
+        <span
+          style="top: 25%; left: 20%; transform: rotate(12deg); opacity: 0.02"
+          >ART</span
+        >
+        <span
+          style="
+            bottom: 30%;
+            right: 20%;
+            transform: rotate(-12deg);
+            opacity: 0.02;
+          "
+          >EPIC</span
+        >
+        <span style="top: 80%; left: 15%; transform: rotate(-20deg)"
+          >CINEMATIC</span
+        >
+        <span style="top: 20%; right: 35%; transform: rotate(15deg)"
+          >LEGENDARY</span
+        >
+        <span style="top: 50%; left: 10%; transform: rotate(-10deg)"
+          >MARVEL</span
+        >
+        <span style="top: 45%; right: 12%; transform: rotate(10deg)">CARS</span>
+        <span style="bottom: 22%; left: 40%; transform: rotate(-5deg)"
+          >TV SHOWS</span
+        >
+        <span style="top: 85%; right: 35%; transform: rotate(3deg)"
+          >TRANSFORMERS</span
+        >
+        <span
+          style="top: 65%; left: 80%; transform: rotate(15deg); opacity: 0.05"
+          >SERIES</span
+        >
+        <span
+          style="top: 35%; left: 85%; transform: rotate(20deg); opacity: 0.05"
+          >ANIMATION</span
+        >
       </div>
-      <button class="mobile-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </div>
-  </nav>
-  <section class="hero">
-    <div class="hero-scatter-bg">
-      <span style="top: 10%; left: 5%; transform: rotate(-15deg)">ANIME</span>
-      <span style="top: 15%; right: 10%; transform: rotate(10deg)">MOVIES</span>
-      <span style="bottom: 10%; left: 8%; transform: rotate(5deg)">HEROES</span>
-      <span style="bottom: 15%; right: 5%; transform: rotate(-8deg)">VERSE</span>
-      <span style="top: 40%; left: -2%; transform: rotate(90deg); opacity: 0.02">WALLPAPERS</span>
-      <span style="top: 60%; right: -2%; transform: rotate(-90deg); opacity: 0.02">DESKTOP</span>
-      <span style="top: 5%; left: 40%; transform: rotate(-5deg); font-size: 2rem">4K</span>
-      <span style="bottom: 5%; right: 30%; transform: rotate(8deg); font-size: 2rem">HD</span>
-      <span style="top: 25%; left: 20%; transform: rotate(12deg); opacity: 0.02">ART</span>
-      <span style="bottom: 30%; right: 20%; transform: rotate(-12deg); opacity: 0.02">EPIC</span>
-      <span style="top: 80%; left: 15%; transform: rotate(-20deg)">CINEMATIC</span>
-      <span style="top: 20%; right: 35%; transform: rotate(15deg)">LEGENDARY</span>
-      <span style="top: 50%; left: 10%; transform: rotate(-10deg)">MARVEL</span>
-      <span style="top: 45%; right: 12%; transform: rotate(10deg)">CARS</span>
-      <span style="bottom: 22%; left: 40%; transform: rotate(-5deg)">TV SHOWS</span>
-      <span style="top: 85%; right: 35%; transform: rotate(3deg)">TRANSFORMERS</span>
-      <span style="top: 65%; left: 80%; transform: rotate(15deg); opacity: 0.05">SERIES</span>
-      <span style="top: 35%; left: 85%; transform: rotate(20deg); opacity: 0.05">ANIMATION</span>
-    </div>
-    <div class="hero-badge">CURATED COLLECTION</div>
-    <h1 class="hero-title">
-      <span class="title-line">WALLPAPERS</span>
-      <span class="title-line title-accent">UNLEASHED!</span>
-    </h1>
-    <p class="hero-subtitle">
-      High-quality wallpapers from every verse for every screen
-    </p>
-    <div class="hero-stats">
-      <div class="stat-card">
-        <div class="stat-number" id="stat-wallpapers">30+</div>
-        <div class="stat-label">WALLPAPERS</div>
+      <div class="hero-badge">CURATED COLLECTION</div>
+      <h1 class="hero-title">
+        <span class="title-line">WALLPAPERS</span>
+        <span class="title-line title-accent">UNLEASHED!</span>
+      </h1>
+      <p class="hero-subtitle">
+        High-quality wallpapers from every verse for every screen
+      </p>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-number" id="stat-wallpapers">30+</div>
+          <div class="stat-label">WALLPAPERS</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-collections">7</div>
+          <div class="stat-label">COLLECTIONS</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">HD</div>
+          <div class="stat-label">QUALITY</div>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-number" id="stat-collections">7</div>
-        <div class="stat-label">COLLECTIONS</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">HD</div>
-        <div class="stat-label">QUALITY</div>
-      </div>
-    </div>
-    <a href="#collections" class="btn-hero">
-      <span>EXPLORE COLLECTION</span>
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-          stroke-linejoin="round" />
-      </svg>
-    </a>
-
-
-    <div class="hero-pattern"></div>
-  </section>
-  <section class="collections" id="collections">
-    <div class="section-header">
-      <div class="section-badge">COLLECTIONS</div>
-      <h2 class="section-title">CHOOSE YOUR STYLE</h2>
-    </div>
-
-    <div style="display: flex; justify-content: center; width: 100%;">
-      <div class="search-container" style="margin-bottom: 4rem;">
-        <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <a href="#collections" class="btn-hero">
+        <span>EXPLORE COLLECTION</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
           <path
-            d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            d="M5 12H19M19 12L12 5M19 12L12 19"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
         </svg>
-        <input type="text" id="searchInput" placeholder="Search wallpapers..." />
-      </div>
-    </div>
+      </a>
 
-    <!-- SEARCH RESULTS CARD (Hidden by default) -->
-    <div class="collection-card" id="search-results-card" style="display: none;">
-      <div class="collection-header" style="border-left-color: var(--color-secondary);">
-        <h3 class="collection-title" id="search-query-display">RESULTS</h3>
-        <p class="collection-desc">Displaying search results matching your query.</p>
-        <div class="collection-meta">
-          <span class="meta-tag" id="search-count">0 IMAGES</span><span class="meta-tag">HD</span>
-        </div>
+      <div class="hero-pattern"></div>
+    </section>
+    <section class="collections" id="collections">
+      <div class="section-header">
+        <div class="section-badge">COLLECTIONS</div>
+        <h2 class="section-title">CHOOSE YOUR STYLE</h2>
       </div>
-      <div class="collection-grid" id="search-grid" style="flex-wrap: wrap; overflow: visible;">
-        <!-- Search results injected here -->
-      </div>
-    </div>
-    <div class="collection-card" data-collection="anime">
-      <div class="collection-header">
-        <div class="collection-number">01</div>
-        <h3 class="collection-title">ANIME COLLECTION</h3>
-        <p class="collection-desc">
-          A curated collection of anime-style wallpapers featuring characters, action scenes, and visually striking
-          moments from
-          various anime worlds. This category includes a mix of intense battle frames, calm aesthetic shots, and
-          detailed
-          character artwork.
-        </p>
-        <div class="collection-meta">
-          <span class="meta-tag">19 IMAGES</span><span class="meta-tag">HD</span>
-        </div>
-        <button class="btn-download-all btn-glitch" onclick="downloadCollection('anime')"
-          data-text="DOWNLOAD COLLECTION">
-          DOWNLOAD COLLECTION
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor"
-              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-      <div class="collection-wrapper">
-        <button class="nav-btn nav-prev" aria-label="Previous">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="collection-grid"></div>
-        <button class="nav-btn nav-next" aria-label="Next">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div class="collection-card" data-collection="marvel">
-      <div class="collection-header">
-        <div class="collection-number">02</div>
-        <h3 class="collection-title">MARVEL UNIVERSE</h3>
-        <p class="collection-desc">
-          A collection of wallpapers inspired by the Marvel universe, featuring iconic heroes, villains, and memorable
-          moments
-          from across its stories.Cinematic feel that defines Marvel — from powerful character-focused scenes to
-          large-scale action and dramatic visuals.
-        </p>
-        <div class="collection-meta">
-          <span class="meta-tag">7 IMAGES</span><span class="meta-tag">HD</span>
-        </div>
-        <button class="btn-download-all btn-glitch" onclick="downloadCollection('marvel')"
-          data-text="DOWNLOAD COLLECTION">
-          DOWNLOAD COLLECTION
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor"
-              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-      <div class="collection-wrapper">
-        <button class="nav-btn nav-prev">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="collection-grid"></div>
-        <button class="nav-btn nav-next">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-    </div>
 
-    <div class="collection-card" data-collection="movies">
-      <div class="collection-header">
-        <div class="collection-number">03</div>
-        <h3 class="collection-title">MOVIES & SHOWS</h3>
-        <p class="collection-desc">
-          A curated collection of wallpapers inspired by popular movies and television series, ranging from Breaking Bad
-          to
-          Stranger Things, and films like John Wick to Interstellar. This category captures iconic characters, memorable
-          moments,
-          and the overall mood of each story — whether it’s intense, emotional, dark, or cinematic.
-        </p>
-        <div class="collection-meta">
-          <span class="meta-tag">6 IMAGES</span><span class="meta-tag">HD</span>
+      <div style="display: flex; justify-content: center; width: 100%">
+        <div class="search-container" style="margin-bottom: 4rem">
+          <svg
+            class="search-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search wallpapers..."
+          />
         </div>
-        <button class="btn-download-all btn-glitch" onclick="downloadCollection('movies')"
-          data-text="DOWNLOAD COLLECTION">
-          DOWNLOAD COLLECTION
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor"
-              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
       </div>
-      <div class="collection-wrapper">
-        <button class="nav-btn nav-prev">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="collection-grid"></div>
-        <button class="nav-btn nav-next">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div class="collection-card" data-collection="cars">
-      <div class="collection-header">
-        <div class="collection-number">04</div>
-        <h3 class="collection-title">SPEED & WHEELS</h3>
-        <p class="collection-desc">
-          A collection of wallpapers centered around cars, speed, and automotive culture. This category features a mix
-          of modern supercars, classic designs, and performance-focused visuals that highlight motion, power, and style.
-          Pure adrenaline for your screen. Kachaow!
-        </p>
-        <div class="collection-meta">
-          <span class="meta-tag">2 IMAGES</span><span class="meta-tag">HD</span>
-        </div>
-        <button class="btn-download-all btn-glitch" onclick="downloadCollection('cars')"
-          data-text="DOWNLOAD COLLECTION">
-          DOWNLOAD COLLECTION
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor"
-              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-      <div class="collection-wrapper">
-        <button class="nav-btn nav-prev">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="collection-grid"></div>
-        <button class="nav-btn nav-next">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-    </div>
 
-    <div class="collection-card" data-collection="transformers">
-      <div class="collection-header">
-        <div class="collection-number">05</div>
-        <h3 class="collection-title">TRANSFORMERS</h3>
-        <p class="collection-desc">
-          A collection of wallpapers featuring well-known Transformers characters such as Optimus Prime, Bumblebee,
-          Megatron, and
-          Optimus Primal. This category reflects themes of leadership, conflict, loyalty, and transformation that define
-          the
-          Transformers universe.
-        </p>
-        <div class="collection-meta">
-          <span class="meta-tag">1 IMAGE</span><span class="meta-tag">HD</span>
+      <!-- SEARCH RESULTS CARD (Hidden by default) -->
+      <div
+        class="collection-card"
+        id="search-results-card"
+        style="display: none"
+      >
+        <div
+          class="collection-header"
+          style="border-left-color: var(--color-secondary)"
+        >
+          <h3 class="collection-title" id="search-query-display">RESULTS</h3>
+          <p class="collection-desc">
+            Displaying search results matching your query.
+          </p>
+          <div class="collection-meta">
+            <span class="meta-tag" id="search-count">0 IMAGES</span
+            ><span class="meta-tag">HD</span>
+          </div>
         </div>
-        <button class="btn-download-all btn-glitch" onclick="downloadCollection('transformers')"
-          data-text="DOWNLOAD COLLECTION">
-          DOWNLOAD COLLECTION
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor"
-              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-      <div class="collection-wrapper">
-        <button class="nav-btn nav-prev">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="collection-grid"></div>
-        <button class="nav-btn nav-next">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="collection-card" data-collection="random">
-      <div class="collection-header">
-        <div class="collection-number">06</div>
-        <h3 class="collection-title">RANDOMS</h3>
-        <p class="collection-desc">
-          A mixed collection of wallpapers that don’t follow a single theme or category. This section includes a variety
-          of
-          styles, moods, and ideas — from minimal designs and creative art to unexpected scenes and experimental
-          visuals.
-        </p>
-        <div class="collection-meta">
-          <span class="meta-tag">2 IMAGES</span><span class="meta-tag">HD</span>
+        <div
+          class="collection-grid"
+          id="search-grid"
+          style="flex-wrap: wrap; overflow: visible"
+        >
+          <!-- Search results injected here -->
         </div>
-        <button class="btn-download-all btn-glitch" onclick="downloadCollection('random')"
-          data-text="DOWNLOAD COLLECTION">
-          DOWNLOAD COLLECTION
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor"
-              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
       </div>
-      <div class="collection-wrapper">
-        <button class="nav-btn nav-prev">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="collection-grid"></div>
-        <button class="nav-btn nav-next">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </section>
-  <section class="about" id="about">
-    <div class="section-badge">ABOUT</div>
-    <h3 class="about-title">
-      CURATED BY YOURS TRULY
-      <span class="about-signature">~ Aksh</span>
-    </h3>
-    <div class="about-content">
-      <div class="about-avatar-wrap">
-        <img src="https://avatars.githubusercontent.com/u/156109288?v=4" alt="Aksh Thakkar" class="about-avatar" />
-      </div>
-      <div class="about-text">
-        <p>
-          I created this collection as a wallpaper enthusiast who enjoys customizing desktop setups and experimenting
-          with
-          different styles. The wallpapers here reflect a wide range of interests, including anime-inspired art,
-          superheroes,
-          movies, and TV shows, all brought together in one place. Each wallpaper is carefully selected and upscaled for
-          high-quality desktop displays, with an emphasis on sharp details, clean composition, and overall visual
-          balance.
-        </p>
-        <p>
-          The goal is simple — wallpapers that look great on any screen and make you change your wallpaper “just one
-          more time.”
-        </p>
-        <div class="about-links">
-          <a href="https://github.com/akshhthakkar/wallpapers" target="_blank" class="btn-glitch"
-            data-text="VIEW REPOSITORY">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <div class="collection-card" data-collection="anime">
+        <div class="collection-header">
+          <div class="collection-number">01</div>
+          <h3 class="collection-title">ANIME COLLECTION</h3>
+          <p class="collection-desc">
+            A curated collection of anime-style wallpapers featuring characters,
+            action scenes, and visually striking moments from various anime
+            worlds. This category includes a mix of intense battle frames, calm
+            aesthetic shots, and detailed character artwork.
+          </p>
+          <div class="collection-meta">
+            <span class="meta-tag">19 IMAGES</span
+            ><span class="meta-tag">HD</span>
+          </div>
+          <button
+            class="btn-download-all btn-glitch"
+            onclick="downloadCollection('anime')"
+            data-text="DOWNLOAD COLLECTION"
+          >
+            DOWNLOAD COLLECTION
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
-            <span>VIEW REPOSITORY</span>
-          </a>
-          <a href="https://github.com/akshhthakkar" target="_blank" class="btn-glitch" data-text="GITHUB PROFILE">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          </button>
+        </div>
+        <div class="collection-wrapper">
+          <button class="nav-btn nav-prev" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                d="M15 18L9 12L15 6"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
-            <span>GITHUB PROFILE</span>
+          </button>
+          <div class="collection-grid"></div>
+          <button class="nav-btn nav-next" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="collection-card" data-collection="marvel">
+        <div class="collection-header">
+          <div class="collection-number">02</div>
+          <h3 class="collection-title">MARVEL UNIVERSE</h3>
+          <p class="collection-desc">
+            A collection of wallpapers inspired by the Marvel universe,
+            featuring iconic heroes, villains, and memorable moments from across
+            its stories.Cinematic feel that defines Marvel — from powerful
+            character-focused scenes to large-scale action and dramatic visuals.
+          </p>
+          <div class="collection-meta">
+            <span class="meta-tag">7 IMAGES</span
+            ><span class="meta-tag">HD</span>
+          </div>
+          <button
+            class="btn-download-all btn-glitch"
+            onclick="downloadCollection('marvel')"
+            data-text="DOWNLOAD COLLECTION"
+          >
+            DOWNLOAD COLLECTION
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="collection-wrapper">
+          <button class="nav-btn nav-prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18l-6-6 6-6"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="collection-grid"></div>
+          <button class="nav-btn nav-next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18l6-6-6-6"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="collection-card" data-collection="movies">
+        <div class="collection-header">
+          <div class="collection-number">03</div>
+          <h3 class="collection-title">MOVIES & SHOWS</h3>
+          <p class="collection-desc">
+            A curated collection of wallpapers inspired by popular movies and
+            television series, ranging from Breaking Bad to Stranger Things, and
+            films like John Wick to Interstellar. This category captures iconic
+            characters, memorable moments, and the overall mood of each story —
+            whether it’s intense, emotional, dark, or cinematic.
+          </p>
+          <div class="collection-meta">
+            <span class="meta-tag">6 IMAGES</span
+            ><span class="meta-tag">HD</span>
+          </div>
+          <button
+            class="btn-download-all btn-glitch"
+            onclick="downloadCollection('movies')"
+            data-text="DOWNLOAD COLLECTION"
+          >
+            DOWNLOAD COLLECTION
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="collection-wrapper">
+          <button class="nav-btn nav-prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18l-6-6 6-6"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="collection-grid"></div>
+          <button class="nav-btn nav-next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18l6-6-6-6"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="collection-card" data-collection="cars">
+        <div class="collection-header">
+          <div class="collection-number">04</div>
+          <h3 class="collection-title">SPEED & WHEELS</h3>
+          <p class="collection-desc">
+            A collection of wallpapers centered around cars, speed, and
+            automotive culture. This category features a mix of modern
+            supercars, classic designs, and performance-focused visuals that
+            highlight motion, power, and style. Pure adrenaline for your screen.
+            Kachaow!
+          </p>
+          <div class="collection-meta">
+            <span class="meta-tag">2 IMAGES</span
+            ><span class="meta-tag">HD</span>
+          </div>
+          <button
+            class="btn-download-all btn-glitch"
+            onclick="downloadCollection('cars')"
+            data-text="DOWNLOAD COLLECTION"
+          >
+            DOWNLOAD COLLECTION
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="collection-wrapper">
+          <button class="nav-btn nav-prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18l-6-6 6-6"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="collection-grid"></div>
+          <button class="nav-btn nav-next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18l6-6-6-6"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="collection-card" data-collection="transformers">
+        <div class="collection-header">
+          <div class="collection-number">05</div>
+          <h3 class="collection-title">TRANSFORMERS</h3>
+          <p class="collection-desc">
+            A collection of wallpapers featuring well-known Transformers
+            characters such as Optimus Prime, Bumblebee, Megatron, and Optimus
+            Primal. This category reflects themes of leadership, conflict,
+            loyalty, and transformation that define the Transformers universe.
+          </p>
+          <div class="collection-meta">
+            <span class="meta-tag">1 IMAGE</span
+            ><span class="meta-tag">HD</span>
+          </div>
+          <button
+            class="btn-download-all btn-glitch"
+            onclick="downloadCollection('transformers')"
+            data-text="DOWNLOAD COLLECTION"
+          >
+            DOWNLOAD COLLECTION
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="collection-wrapper">
+          <button class="nav-btn nav-prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18l-6-6 6-6"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="collection-grid"></div>
+          <button class="nav-btn nav-next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18l6-6-6-6"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="collection-card" data-collection="random">
+        <div class="collection-header">
+          <div class="collection-number">06</div>
+          <h3 class="collection-title">RANDOMS</h3>
+          <p class="collection-desc">
+            A mixed collection of wallpapers that don’t follow a single theme or
+            category. This section includes a variety of styles, moods, and
+            ideas — from minimal designs and creative art to unexpected scenes
+            and experimental visuals.
+          </p>
+          <div class="collection-meta">
+            <span class="meta-tag">2 IMAGES</span
+            ><span class="meta-tag">HD</span>
+          </div>
+          <button
+            class="btn-download-all btn-glitch"
+            onclick="downloadCollection('random')"
+            data-text="DOWNLOAD COLLECTION"
+          >
+            DOWNLOAD COLLECTION
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="collection-wrapper">
+          <button class="nav-btn nav-prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18l-6-6 6-6"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="collection-grid"></div>
+          <button class="nav-btn nav-next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18l6-6-6-6"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Submissions Section -->
+    <section class="community-section" id="community">
+      <div class="section-header">
+        <div class="section-badge">COMMUNITY</div>
+        <h2 class="section-title">SHARE YOUR VISION</h2>
+      </div>
+      <div class="community-content">
+        <div class="community-text">
+          <p class="community-intro">
+            Got an amazing wallpaper that deserves to be shared? We welcome
+            submissions from fellow wallpaper enthusiasts!
+          </p>
+          <p class="community-desc">
+            Help me grow this collection by contributing your favorite
+            high-quality, copyright-free wallpapers. Every approved submission
+            gets credited and added to the public collection.
+          </p>
+          <a
+            href="submit.html"
+            class="btn-glitch"
+            data-text="SUBMIT WALLPAPER"
+            style="margin-top: 1.5rem; display: inline-flex"
+          >
+            <span>SUBMIT WALLPAPER</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              style="margin-left: 0.5rem"
+            >
+              <path
+                d="M5 12H19M19 12L12 5M19 12L12 19"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </a>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="footer-content">
-      <p>© 2026 AKSH THAKKAR • ALL WALLPAPERS HD QUALITY</p>
-      <a href="https://github.com/akshhthakkar/wallpapers" target="_blank">VIEW ON GITHUB →</a>
-    </div>
-  </footer>
-  <button class="back-to-top" id="backToTop">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-        stroke-linejoin="round" />
-    </svg>
-  </button>
-  <script src="script.js"></script>
-</body>
+    </section>
 
+    <section class="about" id="about">
+      <div class="section-badge">ABOUT</div>
+      <h3 class="about-title">
+        CURATED BY YOURS TRULY
+        <span class="about-signature">~ Aksh</span>
+      </h3>
+      <div class="about-content">
+        <div class="about-avatar-wrap">
+          <img
+            src="https://avatars.githubusercontent.com/u/156109288?v=4"
+            alt="Aksh Thakkar"
+            class="about-avatar"
+          />
+        </div>
+        <div class="about-text">
+          <p>
+            I created this collection as a wallpaper enthusiast who enjoys
+            customizing desktop setups and experimenting with different styles.
+            The wallpapers here reflect a wide range of interests, including
+            anime-inspired art, superheroes, movies, and TV shows, all brought
+            together in one place. Each wallpaper is carefully selected and
+            upscaled for high-quality desktop displays, with an emphasis on
+            sharp details, clean composition, and overall visual balance.
+          </p>
+          <p>
+            The goal is simple — wallpapers that look great on any screen and
+            make you change your wallpaper “just one more time.”
+          </p>
+          <div class="about-links">
+            <a
+              href="https://github.com/akshhthakkar/wallpapers"
+              target="_blank"
+              class="btn-glitch"
+              data-text="VIEW REPOSITORY"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+              <span>VIEW REPOSITORY</span>
+            </a>
+            <a
+              href="https://github.com/akshhthakkar"
+              target="_blank"
+              class="btn-glitch"
+              data-text="GITHUB PROFILE"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+              <span>GITHUB PROFILE</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2026 AKSH THAKKAR • ALL WALLPAPERS HD QUALITY</p>
+        <a href="https://github.com/akshhthakkar/wallpapers" target="_blank"
+          >VIEW ON GITHUB →</a
+        >
+      </div>
+    </footer>
+    <button class="back-to-top" id="backToTop">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M12 19V5M12 5L5 12M12 5L19 12"
+          stroke="currentColor"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <script src="script.js"></script>
+  </body>
 </html>

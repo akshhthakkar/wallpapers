@@ -835,6 +835,39 @@ body {
   box-shadow: 0 4px 15px rgba(255, 0, 64, 0.4);
 }
 
+/* COMMUNITY SECTION */
+.community-section {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 217, 255, 0.05) 0%,
+    rgba(255, 0, 60, 0.05) 100%
+  );
+  border-top: 1px solid rgba(0, 217, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+.community-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.community-intro {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.community-desc {
+  font-size: 1.1rem;
+  color: var(--color-text-dim);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
 /* ABOUT SECTION */
 .about {
   padding: 6rem 0;
