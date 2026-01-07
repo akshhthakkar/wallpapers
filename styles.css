@@ -120,6 +120,30 @@ body {
 .nav-avatar:hover {
   transform: scale(1.05);
   border-color: var(--color-secondary);
+  animation: img-continuous-glitch 0.4s infinite;
+}
+
+@keyframes img-continuous-glitch {
+  0% {
+    box-shadow: 2px 0 var(--color-secondary), -2px 0 var(--color-primary);
+    transform: translate(-2px, 1px) scale(1.05);
+  }
+  25% {
+    box-shadow: -2px 0 var(--color-secondary), 2px 0 var(--color-primary);
+    transform: translate(2px, -1px) scale(1.05);
+  }
+  50% {
+    box-shadow: 2px 0 var(--color-secondary), -2px 0 var(--color-primary);
+    transform: translate(-1px, 2px) scale(1.05);
+  }
+  75% {
+    box-shadow: -2px 0 var(--color-secondary), 2px 0 var(--color-primary);
+    transform: translate(1px, -2px) scale(1.05);
+  }
+  100% {
+    box-shadow: 2px 0 var(--color-secondary), -2px 0 var(--color-primary);
+    transform: translate(-2px, 1px) scale(1.05);
+  }
 }
 
 .nav-brand {
@@ -297,6 +321,7 @@ body {
       rgba(255, 0, 64, 0.08) 0%,
       transparent 50%
     );
+
   z-index: 0;
 }
 
@@ -888,11 +913,7 @@ body {
   right: 2rem;
   width: 60px;
   height: 60px;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-secondary)
-  );
+  background: #ffffff;
   color: var(--color-bg);
   border: none;
   border-radius: 50%;
@@ -905,7 +926,8 @@ body {
   transform: translateY(20px);
   transition: all 0.3s ease;
   z-index: 999;
-  box-shadow: 0 2px 15px rgba(0, 217, 255, 0.3);
+  box-shadow: 2px 0px 0px var(--color-primary),
+    4px 0px 0px var(--color-secondary);
 }
 
 .back-to-top.visible {
@@ -914,10 +936,7 @@ body {
   transform: translateY(0);
 }
 
-.back-to-top:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 20px rgba(0, 217, 255, 0.5);
-}
+/* .back-to-top:hover moved to animation section */
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
@@ -977,6 +996,14 @@ body {
 
   .collection-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-right: 1.5rem; /* Ensure space for last item */
+  }
+
+  /* Make grid items larger on mobile */
+  .grid-item {
+    flex: 0 0 90vw !important; /* Takes up 90% of viewport width */
+    aspect-ratio: 16 / 9;
   }
 
   .about-avatar {
@@ -987,6 +1014,73 @@ body {
   .footer-content {
     flex-direction: column;
     text-align: center;
+    gap: 2rem; /* Increased gap for better spacing */
+  }
+}
+
+/* AUTO GLITCH FOR NAVBAR BRAND */
+.nav-brand {
+  position: relative;
+  display: inline-block;
+  animation: auto-glitch 3s infinite;
+  cursor: default;
+}
+
+.nav-brand:hover {
+  animation: continuous-glitch 0.4s infinite;
+}
+
+@keyframes auto-glitch {
+  0% {
+    text-shadow: none;
+    transform: none;
+  }
+  1% {
+    text-shadow: 2px 0 var(--color-secondary), -2px 0 var(--color-primary);
+    transform: translate(-2px, 1px);
+  }
+  2% {
+    text-shadow: -2px 0 var(--color-secondary), 2px 0 var(--color-primary);
+    transform: translate(2px, -1px);
+  }
+  3% {
+    text-shadow: 2px 0 var(--color-secondary), -2px 0 var(--color-primary);
+    transform: translate(-1px, 2px);
+  }
+  4% {
+    text-shadow: -2px 0 var(--color-secondary), 2px 0 var(--color-primary);
+    transform: translate(1px, -2px);
+  }
+  5% {
+    text-shadow: none;
+    transform: none;
+  }
+  100% {
+    text-shadow: none;
+    transform: none;
+  }
+}
+
+@keyframes continuous-glitch {
+  0% {
+    text-shadow: 2px 0 var(--color-secondary), -2px 0 var(--color-primary);
+    transform: translate(-2px, 1px);
+  }
+  25% {
+    text-shadow: -2px 0 var(--color-secondary), 2px 0 var(--color-primary);
+    transform: translate(2px, -1px);
+  }
+  50% {
+    text-shadow: 2px 0 var(--color-secondary), -2px 0 var(--color-primary);
+    transform: translate(-1px, 2px);
+  }
+  75% {
+    text-shadow: -2px 0 var(--color-secondary), 2px 0 var(--color-primary);
+    transform: translate(1px, -2px);
+  }
+  100% {
+    text-shadow: 2px 0 var(--color-secondary), -2px 0 var(--color-primary);
+    transform: translate(-2px, 1px);
   }
 }
 
@@ -1125,4 +1219,151 @@ body {
 
 .marquee-section:hover .marquee-group {
   animation-play-state: paused;
+}
+
+/* GLITCH BUTTON THEME */
+/* GLITCH BUTTON THEME */
+.btn-glitch,
+.btn-glitch::after {
+  padding: 1rem 2.5rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  background: linear-gradient(45deg, transparent 5%, #ffffff 5%);
+  border: 0;
+  color: var(--color-bg);
+  letter-spacing: 0.08em;
+  line-height: 1;
+  box-shadow: 3px 0px 0px var(--color-primary),
+    6px 0px 0px var(--color-secondary);
+  outline: transparent;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  text-decoration: none !important;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-glitch::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: attr(data-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    var(--color-secondary) 3%,
+    var(--color-secondary) 5%,
+    var(--color-primary) 5%,
+    var(--color-primary) 7%,
+    #ffffff 7%
+  );
+  text-shadow: -3px -3px 0px var(--color-secondary),
+    3px 3px 0px var(--color-primary);
+  clip-path: var(--slice-0);
+  z-index: 2;
+}
+
+.btn-glitch:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+.btn-glitch svg,
+.btn-glitch .cta-arrow,
+.btn-glitch span {
+  position: relative;
+  z-index: 3; /* Ensure content stays on top of glitch layer */
+}
+
+.back-to-top:hover {
+  transform: translateY(0); /* Ensure it stays in place */
+  box-shadow: 3px 0px 0px var(--color-primary),
+    6px 0px 0px var(--color-secondary);
+  animation: icon-glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+@keyframes icon-glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
 }

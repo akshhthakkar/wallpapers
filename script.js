@@ -274,6 +274,7 @@ const collections = {
     "tv-show-stranger-things-vecna-wallpaper.jpg",
     "tv-show-stranger-things-will-vecna-wallpaper.jpg",
     "marvel-steve-rogers-captain-america-wallpaper.jpg",
+    "tv-show-friends-netlfix-wallpaper.jpg",
   ],
   cars: ["disney-lightning-mcqueen-cars-wallpaper.jpg"],
   transformers: ["disney-optimus-prime-transformers-wallpaper.jpg"],
@@ -528,7 +529,7 @@ function openLightbox(imageSrc, imageAlt) {
   }
 }
 
-console.log("⚡ EPIC WALLPAPERS - INITIALIZED ⚡");
+console.log("⚡ WALLPAPERVERSE ⚡");
 
 // SCROLL REVEAL ANIMATIONS
 const initScrollReveal = () => {
