@@ -151,7 +151,7 @@ submitForm.addEventListener("submit", async (e) => {
     // Upload to Supabase Storage
     const { data: uploadData, error: uploadError } =
       await window.supabaseClient.storage
-        .from("submissions")
+        .from("wallpaper submissions")
         .upload(fileName, selectedFile, {
           cacheControl: "3600",
           upsert: false,
@@ -165,7 +165,7 @@ submitForm.addEventListener("submit", async (e) => {
 
     // Get public URL
     const { data: urlData } = window.supabaseClient.storage
-      .from("submissions")
+      .from("wallpaper submissions")
       .getPublicUrl(fileName);
 
     const imageUrl = urlData.publicUrl;

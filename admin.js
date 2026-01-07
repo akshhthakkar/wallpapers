@@ -219,7 +219,7 @@ async function deleteSubmission(id, fileName) {
     // Delete from Storage
     if (fileName) {
       await window.supabaseClient.storage
-        .from("submissions")
+        .from("wallpaper submissions")
         .remove([fileName]);
     }
 
