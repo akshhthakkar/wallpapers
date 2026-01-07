@@ -284,15 +284,13 @@
       }
 
       .logout-btn {
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 1.2rem;
         background: transparent;
         border: 1px solid var(--color-secondary);
         color: var(--color-secondary);
         font-family: var(--font-display);
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.1em;
         cursor: pointer;
         transition: all 0.3s ease;
       }
@@ -305,11 +303,6 @@
       @media (max-width: 768px) {
         .admin-section {
           padding: 6rem 1rem 2rem;
-        }
-
-        .logout-btn {
-          top: 80px;
-          right: 10px;
         }
       }
     </style>
@@ -343,6 +336,9 @@
             >
           </a>
         </div>
+        <div class="nav-right" id="navLogout" style="display: none">
+          <button class="logout-btn" onclick="logout()">LOGOUT</button>
+        </div>
       </div>
     </nav>
 
@@ -365,7 +361,6 @@
 
     <!-- Admin Dashboard (Hidden by default) -->
     <section class="admin-section" id="dashboardSection" style="display: none">
-      <button class="logout-btn" onclick="logout()">LOGOUT</button>
       <div class="admin-container">
         <div class="section-badge">DASHBOARD</div>
         <h1 class="admin-title">SUBMISSION MANAGEMENT</h1>

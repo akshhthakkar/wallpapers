@@ -40,6 +40,7 @@ loginForm.addEventListener("submit", (e) => {
 function showDashboard() {
   loginSection.style.display = "none";
   dashboardSection.style.display = "block";
+  document.getElementById("navLogout").style.display = "flex";
   loadSubmissions();
 }
 
@@ -49,6 +50,7 @@ function logout() {
   sessionStorage.removeItem("adminLoggedIn");
   loginSection.style.display = "block";
   dashboardSection.style.display = "none";
+  document.getElementById("navLogout").style.display = "none";
   document.getElementById("adminPassword").value = "";
 }
 

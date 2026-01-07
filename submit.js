@@ -170,6 +170,16 @@ submitForm.addEventListener("submit", async (e) => {
 
     const imageUrl = urlData.publicUrl;
 
+    // Get user IP address
+    let userIP = "unknown";
+    try {
+      const ipResponse = await fetch("https://api.ipify.org?format=json");
+      const ipData = await ipResponse.json();
+      userIP = ipData.ip;
+    } catch (e) {
+      console.log("Could not fetch IP");
+    }
+
     // Save to Supabase Database
     const { error: dbError } = await window.supabaseClient
       .from("submissions")
@@ -182,6 +192,7 @@ submitForm.addEventListener("submit", async (e) => {
           file_name: fileName,
           file_size: selectedFile.size,
           status: "pending",
+          ip_address: userIP,
         },
       ]);
 
