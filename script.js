@@ -266,7 +266,7 @@ async function loadWallpapers() {
 
     // Map JSON data to simple filename arrays for compatibility with downloadCollection
     Object.keys(data).forEach((category) => {
-      collections[category] = data[category].map((item) => item.file);
+      collections[category] = data[category].map((item) => item.original);
       renderCollection(category, data[category]);
     });
 
@@ -360,10 +360,11 @@ async function downloadCollection(collectionName) {
     const zip = new JSZip();
     const folder = zip.folder(collectionName);
 
-    const promises = files.map(async (filename) => {
-      const response = await fetch("./" + filename);
+    const promises = files.map(async (url) => {
+      const response = await fetch(url);
       const blob = await response.blob();
-      folder.file(filename, blob);
+      const cleanName = url.split("/").pop(); // Extract filename from path
+      folder.file(cleanName, blob);
     });
 
     await Promise.all(promises);
