@@ -128,7 +128,7 @@ submitForm.addEventListener("submit", async (e) => {
     // Check if Supabase is configured
     if (!window.supabaseClient) {
       throw new Error(
-        "Supabase not configured. Please set up firebase-config.js"
+        "Supabase not configured. Please set up supabase-config.js"
       );
     }
 

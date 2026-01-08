@@ -60,7 +60,7 @@ async function loadSubmissions() {
     if (!window.supabaseClient) {
       submissionsGrid.innerHTML = `
         <div class="empty-state">
-          <p>Supabase not configured. Please set up firebase-config.js</p>
+          <p>Supabase not configured. Please set up supabase-config.js</p>
         </div>
       `;
       return;
