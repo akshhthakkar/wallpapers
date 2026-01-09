@@ -36,6 +36,7 @@
     }
   ],
   "rewrites": [
+    { "source": "/wallpaper/:id", "destination": "/wallpaper.html" },
     { "source": "/submit", "destination": "/submit.html" },
     { "source": "/admin", "destination": "/admin.html" }
   ],

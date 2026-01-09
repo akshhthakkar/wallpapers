@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wallpaper - WallpaperVerse</title>
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/156109288?v=4"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700;800;900&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="wallpaper.css" />
+
+    <!-- SEO Meta Tags - Updated dynamically by JS -->
+    <meta
+      name="description"
+      content="Download free HD wallpaper from WallpaperVerse"
+    />
+    <meta
+      name="keywords"
+      content="wallpaper, hd wallpaper, 4k wallpaper, free download"
+    />
+    <meta name="author" content="Aksh Thakkar" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <link
+      rel="canonical"
+      href="https://wallpaperverse.akshthakkar.me/wallpaper/"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://wallpaperverse.akshthakkar.me/wallpaper/"
+    />
+    <meta property="og:site_name" content="WallpaperVerse" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Wallpaper - WallpaperVerse" />
+    <meta
+      property="og:description"
+      content="Download free HD wallpaper from WallpaperVerse"
+    />
+    <meta property="og:image" content="" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@akshhthakkar" />
+    <meta name="twitter:title" content="Wallpaper - WallpaperVerse" />
+    <meta
+      name="twitter:description"
+      content="Download free HD wallpaper from WallpaperVerse"
+    />
+    <meta name="twitter:image" content="" />
+
+    <!-- Pinterest -->
+    <meta name="pinterest-rich-pin" content="true" />
+
+    <!-- JSON-LD Structured Data - ImageObject (Updated by JS) -->
+    <script type="application/ld+json" id="imageSchema">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "name": "Wallpaper",
+        "description": "HD Wallpaper from WallpaperVerse",
+        "contentUrl": "",
+        "thumbnailUrl": "",
+        "author": {
+          "@type": "Person",
+          "name": "Aksh Thakkar"
+        }
+      }
+    </script>
+
+    <!-- JSON-LD Structured Data - BreadcrumbList -->
+    <script type="application/ld+json" id="breadcrumbSchema">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://wallpaperverse.akshthakkar.me/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Collections",
+            "item": "https://wallpaperverse.akshthakkar.me/#collections"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Wallpaper",
+            "item": ""
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="accent-lines"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a
+            href="index.html"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 0.8rem;
+              text-decoration: none;
+            "
+          >
+            <img
+              class="nav-avatar"
+              src="https://avatars.githubusercontent.com/u/156109288?v=4"
+              alt="Aksh Thakkar"
+            />
+            <span class="nav-brand" style="color: var(--color-primary)"
+              >WALLPAPER<span style="color: var(--color-secondary)"
+                >VERSE</span
+              ></span
+            >
+          </a>
+        </div>
+        <div class="nav-right">
+          <a
+            href="index.html#collections"
+            class="nav-link"
+            title="Browse wallpaper collections"
+            >COLLECTIONS</a
+          >
+          <a
+            href="index.html#about"
+            class="nav-link"
+            title="About WallpaperVerse"
+            >ABOUT</a
+          >
+          <a
+            href="submit.html"
+            class="nav-link"
+            style="color: var(--color-secondary)"
+            title="Submit your wallpaper"
+            >SUBMIT</a
+          >
+          <a
+            href="https://github.com/akshhthakkar/wallpapers"
+            class="btn-glitch"
+            target="_blank"
+            rel="noopener"
+            data-text="GITHUB"
+            title="View source code on GitHub"
+          >
+            <span>GITHUB</span>
+            <div class="cta-arrow">→</div>
+          </a>
+        </div>
+        <button
+          class="mobile-toggle"
+          aria-label="Toggle Menu"
+          onclick="toggleMenu()"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Wallpaper Hero Section -->
+    <section class="wallpaper-hero">
+      <div class="wallpaper-container">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="separator">›</span>
+          <a href="index.html#collections">Collections</a>
+          <span class="separator">›</span>
+          <span id="breadcrumb-category">Category</span>
+          <span class="separator">›</span>
+          <span id="breadcrumb-title" class="current">Wallpaper</span>
+        </nav>
+
+        <!-- Main Image -->
+        <div class="wallpaper-image-container">
+          <div class="loading-spinner" id="loadingSpinner">
+            <div class="spinner"></div>
+          </div>
+          <img id="wallpaperImage" src="" alt="" class="wallpaper-image" />
+        </div>
+
+        <!-- Wallpaper Info -->
+        <div class="wallpaper-info">
+          <div class="wallpaper-meta">
+            <span class="category-badge" id="categoryBadge">ANIME</span>
+            <span class="quality-badge">HD</span>
+          </div>
+          <h1 class="wallpaper-title" id="wallpaperTitle">Loading...</h1>
+          <p class="wallpaper-description" id="wallpaperDescription">
+            High-quality wallpaper from WallpaperVerse. Free to download for
+            personal use.
+          </p>
+
+          <!-- Download Buttons -->
+          <div class="download-actions">
+            <button
+              class="btn-download primary"
+              id="downloadBtn"
+              onclick="downloadWallpaper()"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>DOWNLOAD WALLPAPER</span>
+            </button>
+            <button class="btn-share" onclick="shareWallpaper()">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>SHARE</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Wallpapers -->
+    <section class="related-section">
+      <div class="section-header">
+        <div class="section-badge">MORE</div>
+        <h2 class="section-title">RELATED WALLPAPERS</h2>
+      </div>
+      <div class="related-grid" id="relatedGrid">
+        <!-- Populated by JS -->
+      </div>
+      <div class="view-all-container">
+        <a
+          href="index.html#collections"
+          class="btn-glitch"
+          data-text="VIEW ALL COLLECTIONS"
+        >
+          <span>VIEW ALL COLLECTIONS</span>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            style="margin-left: 0.5rem"
+          >
+            <path
+              d="M5 12H19M19 12L12 5M19 12L12 19"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2026 AKSH THAKKAR • ALL WALLPAPERS HD QUALITY</p>
+        <a
+          href="https://github.com/akshhthakkar/wallpapers"
+          target="_blank"
+          rel="noopener"
+          title="View WallpaperVerse on GitHub"
+          >VIEW ON GITHUB →</a
+        >
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M12 19V5M12 5L5 12M12 5L19 12"
+          stroke="currentColor"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <script src="wallpaper.js"></script>
+  </body>
+</html>

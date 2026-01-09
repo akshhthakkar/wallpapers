@@ -804,6 +804,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  gap: 1rem;
   padding: 2rem;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -812,6 +813,29 @@ body {
 
 .grid-item:hover .item-overlay {
   opacity: 1;
+}
+
+.btn-view-page {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-view-page:hover {
+  transform: scale(1.1);
+  background: var(--color-primary);
+  color: var(--color-bg);
+  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.4);
 }
 
 .btn-quick-download {

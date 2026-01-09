@@ -444,18 +444,30 @@ function renderCollection(category, items) {
   const categoryName = categoryNames[category] || category;
 
   items.forEach((item) => {
+    // Generate URL-friendly ID from filename
+    const wallpaperId = item.file
+      .replace(/\.(jpg|jpeg|png|webp)$/i, "")
+      .replace(/[_\s]+/g, "-")
+      .toLowerCase();
+
     const gridItem = document.createElement("div");
     gridItem.className = "grid-item";
 
     // Generate SEO-friendly alt text
     const altText = `${item.title} - ${categoryName} HD Wallpaper | Free Download | WallpaperVerse`;
 
+    // Click opens lightbox for quick view, but also has link to individual page
     gridItem.onclick = () => openLightbox(item.original, item.title);
 
-    // Initial structure with enhanced alt text
+    // Initial structure with enhanced alt text and link to individual page
     gridItem.innerHTML = `
       <img src="${item.optimized}" alt="${altText}" loading="lazy" />
       <div class="item-overlay">
+        <a href="wallpaper.html?id=${wallpaperId}" class="btn-view-page" aria-label="View ${item.title} page" onclick="event.stopPropagation()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M15 3h6v6M14 10l6.1-6.1M9 21H3v-6M10 14l-6.1 6.1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
         <button class="btn-quick-download" aria-label="Download ${item.title} wallpaper" onclick="event.stopPropagation(); downloadImage('${item.original}')">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
