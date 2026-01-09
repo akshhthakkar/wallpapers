@@ -1,5 +1,40 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "wallpapers.akshthakkar.me"
+        }
+      ],
+      "destination": "https://wallpaperverse.akshthakkar.me/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "wallpapers-verse.vercel.app"
+        }
+      ],
+      "destination": "https://wallpaperverse.akshthakkar.me/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "wallpapersverse.vercel.app"
+        }
+      ],
+      "destination": "https://wallpaperverse.akshthakkar.me/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/submit", "destination": "/submit.html" },
     { "source": "/admin", "destination": "/admin.html" }

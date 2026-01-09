@@ -431,16 +431,32 @@ function renderCollection(category, items) {
     countTag.textContent = `${count} IMAGE${count !== 1 ? "S" : ""}`;
   }
 
+  // Category display names for better alt text
+  const categoryNames = {
+    anime: "Anime",
+    marvel: "Marvel",
+    movies: "Movies & TV Shows",
+    cars: "Cars & Supercars",
+    transformers: "Transformers",
+    random: "Random",
+  };
+
+  const categoryName = categoryNames[category] || category;
+
   items.forEach((item) => {
     const gridItem = document.createElement("div");
     gridItem.className = "grid-item";
+
+    // Generate SEO-friendly alt text
+    const altText = `${item.title} - ${categoryName} HD Wallpaper | Free Download | WallpaperVerse`;
+
     gridItem.onclick = () => openLightbox(item.original, item.title);
 
-    // Initial structure
+    // Initial structure with enhanced alt text
     gridItem.innerHTML = `
-      <img src="${item.optimized}" alt="${item.title}" loading="lazy" />
+      <img src="${item.optimized}" alt="${altText}" loading="lazy" />
       <div class="item-overlay">
-        <button class="btn-quick-download" aria-label="Download ${item.title}" onclick="event.stopPropagation(); downloadImage('${item.original}')">
+        <button class="btn-quick-download" aria-label="Download ${item.title} wallpaper" onclick="event.stopPropagation(); downloadImage('${item.original}')">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
