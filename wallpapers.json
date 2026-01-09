@@ -149,6 +149,12 @@
       "original": "./wallpapers/marvel/marvel_captain_america.jpg"
     },
     {
+      "file": "marvel_thor_ragnarok.jpg",
+      "title": "Marvel_thor_ragnarok",
+      "optimized": "./optimized/marvel/marvel_thor_ragnarok.jpg",
+      "original": "./wallpapers/marvel/marvel_thor_ragnarok.jpg"
+    },
+    {
       "file": "marvel_thor_wakanda.jpg",
       "title": "Marvel_thor_wakanda",
       "optimized": "./optimized/marvel/marvel_thor_wakanda.jpg",
@@ -175,10 +181,46 @@
       "original": "./wallpapers/movies/tv-show-friends-netlfix-wallpaper.jpg"
     },
     {
+      "file": "tv-show-stranger things-dimensions.jpg",
+      "title": "Stranger things Dimensions",
+      "optimized": "./optimized/movies/tv-show-stranger things-dimensions.jpg",
+      "original": "./wallpapers/movies/tv-show-stranger things-dimensions.jpg"
+    },
+    {
+      "file": "tv-show-stranger things-mindflayer.jpg",
+      "title": "Stranger things Mindflayer",
+      "optimized": "./optimized/movies/tv-show-stranger things-mindflayer.jpg",
+      "original": "./wallpapers/movies/tv-show-stranger things-mindflayer.jpg"
+    },
+    {
       "file": "tv-show-stranger things-steve.jpg",
       "title": "Stranger things Steve",
       "optimized": "./optimized/movies/tv-show-stranger things-steve.jpg",
       "original": "./wallpapers/movies/tv-show-stranger things-steve.jpg"
+    },
+    {
+      "file": "tv-show-stranger things-the-party.jpeg",
+      "title": "Stranger things The Party",
+      "optimized": "./optimized/movies/tv-show-stranger things-the-party.jpeg",
+      "original": "./wallpapers/movies/tv-show-stranger things-the-party.jpeg"
+    },
+    {
+      "file": "tv-show-stranger things-upside_down.jpeg",
+      "title": "Stranger things Upside_down",
+      "optimized": "./optimized/movies/tv-show-stranger things-upside_down.jpeg",
+      "original": "./wallpapers/movies/tv-show-stranger things-upside_down.jpeg"
+    },
+    {
+      "file": "tv-show-stranger things-welcome_to_hawkins.jpg",
+      "title": "Stranger things Welcome_to_hawkins",
+      "optimized": "./optimized/movies/tv-show-stranger things-welcome_to_hawkins.jpg",
+      "original": "./wallpapers/movies/tv-show-stranger things-welcome_to_hawkins.jpg"
+    },
+    {
+      "file": "tv-show-stranger things-will_house.jpg",
+      "title": "Stranger things Will_house",
+      "optimized": "./optimized/movies/tv-show-stranger things-will_house.jpg",
+      "original": "./wallpapers/movies/tv-show-stranger things-will_house.jpg"
     },
     {
       "file": "tv-show-stranger-things-cast-wallpaper.jpg",
@@ -206,6 +248,12 @@
     }
   ],
   "random": [
+    {
+      "file": "random-mortal_combat.jpg",
+      "title": "Random Mortal_combat",
+      "optimized": "./optimized/random/random-mortal_combat.jpg",
+      "original": "./wallpapers/random/random-mortal_combat.jpg"
+    },
     {
       "file": "sneaker-jordan-lost-and-found-retro-wallpaper.jpg",
       "title": "Jordan Lost And Found Retro",
