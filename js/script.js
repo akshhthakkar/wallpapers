@@ -986,6 +986,11 @@ function createFullscreenOverlay() {
       </svg>
     </button>
     <img id="fullscreenImage" src="" alt="Fullscreen Preview" />
+    <button class="btn-fullscreen-download" id="fullscreenDownloadBtn" onclick="downloadFullscreenImage()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
   `;
   overlay.onclick = (e) => {
     if (e.target === overlay) closeFullscreenPreview();
@@ -993,16 +998,24 @@ function createFullscreenOverlay() {
   document.body.appendChild(overlay);
 }
 
+// Store current fullscreen image original URL for download
+let currentFullscreenOriginal = "";
+
 // Open fullscreen preview using browser's Fullscreen API (like F11)
-function openFullscreenPreview(imageSrc, title) {
+function openFullscreenPreview(imageSrc, title, originalUrl) {
   const overlay = document.getElementById("fullscreenOverlay");
   const img = document.getElementById("fullscreenImage");
-  const titleEl = document.getElementById("fullscreenTitle");
 
   if (!overlay || !img) return;
 
   img.src = imageSrc;
-  if (titleEl) titleEl.textContent = title || "";
+  // Store original URL for download (derive from optimized path if not provided)
+  currentFullscreenOriginal =
+    originalUrl ||
+    imageSrc
+      .replace("optimized/", "wallpapers/")
+      .replace(".webp", ".jpg")
+      .split("?")[0];
   overlay.classList.add("active");
 
   // Request actual browser fullscreen (like F11)
@@ -1012,6 +1025,13 @@ function openFullscreenPreview(imageSrc, title) {
     overlay.webkitRequestFullscreen();
   } else if (overlay.msRequestFullscreen) {
     overlay.msRequestFullscreen();
+  }
+}
+
+// Download the current fullscreen image
+function downloadFullscreenImage() {
+  if (currentFullscreenOriginal) {
+    downloadImage(currentFullscreenOriginal);
   }
 }
 

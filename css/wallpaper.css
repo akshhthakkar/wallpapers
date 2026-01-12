@@ -337,6 +337,14 @@
   }
 }
 
+.fullscreen-hint .quality-note {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  opacity: 0.9;
+}
+
 /* Fullscreen Button */
 .btn-fullscreen {
   display: inline-flex;

@@ -378,7 +378,7 @@ function loadRelatedWallpapers() {
   relatedGrid.innerHTML = related
     .map(
       (w) => `
-    <a href="/wallpaper/${w.id}" class="related-item">
+    <a href="wallpaper.html?id=${w.id}" class="related-item">
       <img src="${w.optimized}" alt="${w.title} - ${
         categoryNames[w.category]
       } Wallpaper" loading="lazy" />

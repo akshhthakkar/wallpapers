@@ -302,11 +302,13 @@
 
         const categories = [
           { id: "anime", name: "Anime" },
-          { id: "marvel", name: "Marvel" },
+          { id: "marvel", name: "Marvel Universe" },
+          { id: "dc", name: "DC Universe" },
           { id: "movies", name: "Movies & TV" },
-          { id: "cars", name: "Cars" },
+          { id: "cars", name: "Car Culture" },
           { id: "football", name: "Football" },
           { id: "transformers", name: "Transformers" },
+          { id: "wanderlust", name: "Wanderlust" },
           { id: "random", name: "Random" },
         ];
 
@@ -458,14 +460,7 @@
           const altText = `${item.title} - ${categoryName} HD Wallpaper | Free Download`;
 
           gridItem.onclick = () => {
-            // If openLightbox is available globally from script.js
-            if (window.openLightbox)
-              window.openLightbox(
-                item.optimized + "?v=" + Date.now(),
-                item.title,
-                item.original
-              );
-            else window.location.href = `wallpaper.html?id=${wallpaperId}`;
+            window.location.href = `wallpaper.html?id=${wallpaperId}`;
           };
 
           gridItem.innerHTML = `
