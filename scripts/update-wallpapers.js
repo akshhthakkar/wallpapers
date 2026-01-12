@@ -52,6 +52,7 @@ function generateTitle(filename) {
     "tv-show-",
     "disney-",
     "sneaker-",
+    "football-",
   ];
   for (const p of prefixes) {
     if (name.toLowerCase().startsWith(p)) {
@@ -122,11 +123,11 @@ async function processImage(category, filename) {
           .toFile(outputPath);
       }
 
-      // 4. Same logic for Thumbnail (400x225)
+      // 4. Same logic for Thumbnail (600x338)
       if (!fs.existsSync(thumbPath)) {
         const thumbBg = await sharp(inputPath)
           .rotate()
-          .resize(400, 225, { fit: "cover" })
+          .resize(600, 338, { fit: "cover" })
           .blur(20)
           .modulate({ brightness: 0.6 })
           .toBuffer();
@@ -134,8 +135,8 @@ async function processImage(category, filename) {
         const thumbFg = await sharp(inputPath)
           .rotate()
           .resize({
-            width: 400,
-            height: 225,
+            width: 600,
+            height: 338,
             fit: "contain",
             background: { r: 0, g: 0, b: 0, alpha: 0 },
           })
@@ -147,6 +148,7 @@ async function processImage(category, filename) {
           .toFile(thumbPath);
       }
     }
+    // Landscape Logic: Standard Cover
     // Landscape Logic: Standard Cover
     else {
       // Create optimized version (1920x1080) if not exists
@@ -163,13 +165,13 @@ async function processImage(category, filename) {
           .toFile(outputPath);
       }
 
-      // Create thumbnail version (400x225) if not exists
+      // Create thumbnail version (600x338)
       if (!fs.existsSync(thumbPath)) {
         await sharp(inputPath)
           .rotate() // Only auto-rotate from EXIF
           .resize({
-            width: 400,
-            height: 225,
+            width: 600,
+            height: 338,
             fit: "cover",
             position: "center",
           })
@@ -202,7 +204,7 @@ async function processImage(category, filename) {
 
       await sharp(inputPath)
         .rotate()
-        .resize(400, 225, {
+        .resize(600, 338, {
           fit: "contain",
           background: { r: 0, g: 0, b: 0, alpha: 1 },
         })

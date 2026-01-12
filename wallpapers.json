@@ -8,6 +8,13 @@
       "original": "wallpapers/anime/anime-chainsawman-denji-angry.jpg"
     },
     {
+      "file": "anime-dbz-goku-mui.jpg",
+      "title": "Anime Dbz Goku Mui",
+      "thumbnail": "thumbnails/anime/anime-dbz-goku-mui.webp",
+      "optimized": "optimized/anime/anime-dbz-goku-mui.webp",
+      "original": "wallpapers/anime/anime-dbz-goku-mui.jpg"
+    },
+    {
       "file": "anime-demon-slayer-zenitsu-punch.jpeg",
       "title": "Anime Demon Slayer Zenitsu Punch",
       "thumbnail": "thumbnails/anime/anime-demon-slayer-zenitsu-punch.webp",
@@ -20,6 +27,20 @@
       "thumbnail": "thumbnails/anime/anime-dragonball-z-goku.webp",
       "optimized": "optimized/anime/anime-dragonball-z-goku.webp",
       "original": "wallpapers/anime/anime-dragonball-z-goku.jpg"
+    },
+    {
+      "file": "anime-hatake-kakashi.png",
+      "title": "Anime Hatake Kakashi",
+      "thumbnail": "thumbnails/anime/anime-hatake-kakashi.webp",
+      "optimized": "optimized/anime/anime-hatake-kakashi.webp",
+      "original": "wallpapers/anime/anime-hatake-kakashi.png"
+    },
+    {
+      "file": "anime-jjk-saturo-gojo.jpg",
+      "title": "Anime Jjk Saturo Gojo",
+      "thumbnail": "thumbnails/anime/anime-jjk-saturo-gojo.webp",
+      "optimized": "optimized/anime/anime-jjk-saturo-gojo.webp",
+      "original": "wallpapers/anime/anime-jjk-saturo-gojo.jpg"
     },
     {
       "file": "anime-naruto-sasuke-final-fight.jpg",
@@ -136,11 +157,25 @@
   ],
   "cars": [
     {
+      "file": "cars-porsche-black-red.jpeg",
+      "title": "Cars Porsche Black Red",
+      "thumbnail": "thumbnails/cars/cars-porsche-black-red.webp",
+      "optimized": "optimized/cars/cars-porsche-black-red.webp",
+      "original": "wallpapers/cars/cars-porsche-black-red.jpeg"
+    },
+    {
       "file": "disney-lightning-mcqueen-cars-wallpaper.jpg",
       "title": "Lightning Mcqueen Cars Wallpaper",
       "thumbnail": "thumbnails/cars/disney-lightning-mcqueen-cars-wallpaper.webp",
       "optimized": "optimized/cars/disney-lightning-mcqueen-cars-wallpaper.webp",
       "original": "wallpapers/cars/disney-lightning-mcqueen-cars-wallpaper.jpg"
+    },
+    {
+      "file": "disney-lightning-mcqueen-cars.jpeg",
+      "title": "Lightning Mcqueen Cars",
+      "thumbnail": "thumbnails/cars/disney-lightning-mcqueen-cars.webp",
+      "optimized": "optimized/cars/disney-lightning-mcqueen-cars.webp",
+      "original": "wallpapers/cars/disney-lightning-mcqueen-cars.jpeg"
     },
     {
       "file": "f1-max-and-lewis.jpg",
@@ -150,11 +185,76 @@
       "original": "wallpapers/cars/f1-max-and-lewis.jpg"
     },
     {
+      "file": "f1-pit-stop-aesthetic.jpeg",
+      "title": "F1 Pit Stop Aesthetic",
+      "thumbnail": "thumbnails/cars/f1-pit-stop-aesthetic.webp",
+      "optimized": "optimized/cars/f1-pit-stop-aesthetic.webp",
+      "original": "wallpapers/cars/f1-pit-stop-aesthetic.jpeg"
+    },
+    {
       "file": "lamborghini-miura-wallpaper.jpg",
       "title": "Lamborghini Miura Wallpaper",
       "thumbnail": "thumbnails/cars/lamborghini-miura-wallpaper.webp",
       "optimized": "optimized/cars/lamborghini-miura-wallpaper.webp",
       "original": "wallpapers/cars/lamborghini-miura-wallpaper.jpg"
+    },
+    {
+      "file": "znxad3yqyznsuxd19ol2.jpeg",
+      "title": "Znxad3yqyznsuxd19ol2",
+      "thumbnail": "thumbnails/cars/znxad3yqyznsuxd19ol2.webp",
+      "optimized": "optimized/cars/znxad3yqyznsuxd19ol2.webp",
+      "original": "wallpapers/cars/znxad3yqyznsuxd19ol2.jpeg"
+    }
+  ],
+  "football": [
+    {
+      "file": "football-cristiano-ronaldo.jpeg",
+      "title": "Cristiano Ronaldo",
+      "thumbnail": "thumbnails/football/football-cristiano-ronaldo.webp",
+      "optimized": "optimized/football/football-cristiano-ronaldo.webp",
+      "original": "wallpapers/football/football-cristiano-ronaldo.jpeg"
+    },
+    {
+      "file": "football-david-beckham-bw.jpeg",
+      "title": "David Beckham Bw",
+      "thumbnail": "thumbnails/football/football-david-beckham-bw.webp",
+      "optimized": "optimized/football/football-david-beckham-bw.webp",
+      "original": "wallpapers/football/football-david-beckham-bw.jpeg"
+    },
+    {
+      "file": "football-kaka.jpeg",
+      "title": "Kaka",
+      "thumbnail": "thumbnails/football/football-kaka.webp",
+      "optimized": "optimized/football/football-kaka.webp",
+      "original": "wallpapers/football/football-kaka.jpeg"
+    },
+    {
+      "file": "football-messi-worldcup.jpeg",
+      "title": "Messi Worldcup",
+      "thumbnail": "thumbnails/football/football-messi-worldcup.webp",
+      "optimized": "optimized/football/football-messi-worldcup.webp",
+      "original": "wallpapers/football/football-messi-worldcup.jpeg"
+    },
+    {
+      "file": "football-msn-trio-cup.jpeg",
+      "title": "Msn Trio Cup",
+      "thumbnail": "thumbnails/football/football-msn-trio-cup.webp",
+      "optimized": "optimized/football/football-msn-trio-cup.webp",
+      "original": "wallpapers/football/football-msn-trio-cup.jpeg"
+    },
+    {
+      "file": "football-msn-trio-iconic.jpeg",
+      "title": "Msn Trio Iconic",
+      "thumbnail": "thumbnails/football/football-msn-trio-iconic.webp",
+      "optimized": "optimized/football/football-msn-trio-iconic.webp",
+      "original": "wallpapers/football/football-msn-trio-iconic.jpeg"
+    },
+    {
+      "file": "football-neymar-jr.jpeg",
+      "title": "Neymar Jr",
+      "thumbnail": "thumbnails/football/football-neymar-jr.webp",
+      "optimized": "optimized/football/football-neymar-jr.webp",
+      "original": "wallpapers/football/football-neymar-jr.jpeg"
     }
   ],
   "marvel": [
@@ -199,6 +299,13 @@
       "thumbnail": "thumbnails/marvel/marvel-spider-gwen-stacy-wallpaper.webp",
       "optimized": "optimized/marvel/marvel-spider-gwen-stacy-wallpaper.webp",
       "original": "wallpapers/marvel/marvel-spider-gwen-stacy-wallpaper.jpg"
+    },
+    {
+      "file": "marvel-spider-man-animated.jpg",
+      "title": "Spider Man Animated",
+      "thumbnail": "thumbnails/marvel/marvel-spider-man-animated.webp",
+      "optimized": "optimized/marvel/marvel-spider-man-animated.webp",
+      "original": "wallpapers/marvel/marvel-spider-man-animated.jpg"
     },
     {
       "file": "marvel-spider-man-miles-morales.jpg",
@@ -378,6 +485,13 @@
       "original": "wallpapers/movies/tv-show-stranger-things-upside-down-wallpaper.jpg"
     },
     {
+      "file": "tv-show-stranger-things-vecna-2.jpg",
+      "title": "Stranger Things Vecna 2",
+      "thumbnail": "thumbnails/movies/tv-show-stranger-things-vecna-2.webp",
+      "optimized": "optimized/movies/tv-show-stranger-things-vecna-2.webp",
+      "original": "wallpapers/movies/tv-show-stranger-things-vecna-2.jpg"
+    },
+    {
       "file": "tv-show-stranger-things-vecna-wallpaper.jpg",
       "title": "Stranger Things Vecna Wallpaper",
       "thumbnail": "thumbnails/movies/tv-show-stranger-things-vecna-wallpaper.webp",
@@ -415,6 +529,41 @@
       "thumbnail": "thumbnails/transformers/disney-optimus-prime-transformers-wallpaper.webp",
       "optimized": "optimized/transformers/disney-optimus-prime-transformers-wallpaper.webp",
       "original": "wallpapers/transformers/disney-optimus-prime-transformers-wallpaper.jpg"
+    },
+    {
+      "file": "transformers-optimus-prime-2.jpeg",
+      "title": "Transformers Optimus Prime 2",
+      "thumbnail": "thumbnails/transformers/transformers-optimus-prime-2.webp",
+      "optimized": "optimized/transformers/transformers-optimus-prime-2.webp",
+      "original": "wallpapers/transformers/transformers-optimus-prime-2.jpeg"
+    },
+    {
+      "file": "transformers-optimus-prime-3.jpeg",
+      "title": "Transformers Optimus Prime 3",
+      "thumbnail": "thumbnails/transformers/transformers-optimus-prime-3.webp",
+      "optimized": "optimized/transformers/transformers-optimus-prime-3.webp",
+      "original": "wallpapers/transformers/transformers-optimus-prime-3.jpeg"
+    },
+    {
+      "file": "transformers-optimus-prime-4.jpeg",
+      "title": "Transformers Optimus Prime 4",
+      "thumbnail": "thumbnails/transformers/transformers-optimus-prime-4.webp",
+      "optimized": "optimized/transformers/transformers-optimus-prime-4.webp",
+      "original": "wallpapers/transformers/transformers-optimus-prime-4.jpeg"
+    },
+    {
+      "file": "transformers-optimus-prime-5.jpeg",
+      "title": "Transformers Optimus Prime 5",
+      "thumbnail": "thumbnails/transformers/transformers-optimus-prime-5.webp",
+      "optimized": "optimized/transformers/transformers-optimus-prime-5.webp",
+      "original": "wallpapers/transformers/transformers-optimus-prime-5.jpeg"
+    },
+    {
+      "file": "transformers-optimus-prime.jpeg",
+      "title": "Transformers Optimus Prime",
+      "thumbnail": "thumbnails/transformers/transformers-optimus-prime.webp",
+      "optimized": "optimized/transformers/transformers-optimus-prime.webp",
+      "original": "wallpapers/transformers/transformers-optimus-prime.jpeg"
     }
   ]
 }
