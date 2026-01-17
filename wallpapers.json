@@ -36,6 +36,13 @@
       "original": "wallpapers/anime/anime-dragonball-z-goku.jpg"
     },
     {
+      "file": "anime-drgaonball-goku.jpg",
+      "title": "Anime Drgaonball Goku",
+      "thumbnail": "thumbnails/anime/anime-drgaonball-goku.webp",
+      "optimized": "optimized/anime/anime-drgaonball-goku.webp",
+      "original": "wallpapers/anime/anime-drgaonball-goku.jpg"
+    },
+    {
       "file": "anime-hatake-kakashi.png",
       "title": "Anime Hatake Kakashi",
       "thumbnail": "thumbnails/anime/anime-hatake-kakashi.webp",
@@ -394,11 +401,32 @@
       "original": "wallpapers/marvel/marvel-aunt-may-parker-wallpaper.jpg"
     },
     {
+      "file": "marvel-black-panther-02.jpg",
+      "title": "Black Panther 02",
+      "thumbnail": "thumbnails/marvel/marvel-black-panther-02.webp",
+      "optimized": "optimized/marvel/marvel-black-panther-02.webp",
+      "original": "wallpapers/marvel/marvel-black-panther-02.jpg"
+    },
+    {
+      "file": "marvel-black-panther.jpg",
+      "title": "Black Panther",
+      "thumbnail": "thumbnails/marvel/marvel-black-panther.webp",
+      "optimized": "optimized/marvel/marvel-black-panther.webp",
+      "original": "wallpapers/marvel/marvel-black-panther.jpg"
+    },
+    {
       "file": "marvel-black-widow.jpeg",
       "title": "Black Widow",
       "thumbnail": "thumbnails/marvel/marvel-black-widow.webp",
       "optimized": "optimized/marvel/marvel-black-widow.webp",
       "original": "wallpapers/marvel/marvel-black-widow.jpeg"
+    },
+    {
+      "file": "marvel-deadpool-double-swords.jpg",
+      "title": "Deadpool Double Swords",
+      "thumbnail": "thumbnails/marvel/marvel-deadpool-double-swords.webp",
+      "optimized": "optimized/marvel/marvel-deadpool-double-swords.webp",
+      "original": "wallpapers/marvel/marvel-deadpool-double-swords.jpg"
     },
     {
       "file": "marvel-deadpool-red-bg.jpeg",
@@ -415,6 +443,20 @@
       "original": "wallpapers/marvel/marvel-deadpool-redblack.jpeg"
     },
     {
+      "file": "marvel-deadpool-x-force.jpg",
+      "title": "Deadpool X Force",
+      "thumbnail": "thumbnails/marvel/marvel-deadpool-x-force.webp",
+      "optimized": "optimized/marvel/marvel-deadpool-x-force.webp",
+      "original": "wallpapers/marvel/marvel-deadpool-x-force.jpg"
+    },
+    {
+      "file": "marvel-iron-man-pizza.jpg",
+      "title": "Iron Man Pizza",
+      "thumbnail": "thumbnails/marvel/marvel-iron-man-pizza.webp",
+      "optimized": "optimized/marvel/marvel-iron-man-pizza.webp",
+      "original": "wallpapers/marvel/marvel-iron-man-pizza.jpg"
+    },
+    {
       "file": "marvel-ironman-black-bg.jpeg",
       "title": "Ironman Black Bg",
       "thumbnail": "thumbnails/marvel/marvel-ironman-black-bg.webp",
@@ -422,11 +464,39 @@
       "original": "wallpapers/marvel/marvel-ironman-black-bg.jpeg"
     },
     {
+      "file": "marvel-ironman-glove.jpg",
+      "title": "Ironman Glove",
+      "thumbnail": "thumbnails/marvel/marvel-ironman-glove.webp",
+      "optimized": "optimized/marvel/marvel-ironman-glove.webp",
+      "original": "wallpapers/marvel/marvel-ironman-glove.jpg"
+    },
+    {
+      "file": "marvel-loki-1.jpg",
+      "title": "Loki 1",
+      "thumbnail": "thumbnails/marvel/marvel-loki-1.webp",
+      "optimized": "optimized/marvel/marvel-loki-1.webp",
+      "original": "wallpapers/marvel/marvel-loki-1.jpg"
+    },
+    {
+      "file": "marvel-loki-2.jpg",
+      "title": "Loki 2",
+      "thumbnail": "thumbnails/marvel/marvel-loki-2.webp",
+      "optimized": "optimized/marvel/marvel-loki-2.webp",
+      "original": "wallpapers/marvel/marvel-loki-2.jpg"
+    },
+    {
       "file": "marvel-loki-asgardian-prince-wallpaper.jpg",
       "title": "Loki Asgardian Prince Wallpaper",
       "thumbnail": "thumbnails/marvel/marvel-loki-asgardian-prince-wallpaper.webp",
       "optimized": "optimized/marvel/marvel-loki-asgardian-prince-wallpaper.webp",
       "original": "wallpapers/marvel/marvel-loki-asgardian-prince-wallpaper.jpg"
+    },
+    {
+      "file": "marvel-loki-black-white.jpg",
+      "title": "Loki Black White",
+      "thumbnail": "thumbnails/marvel/marvel-loki-black-white.webp",
+      "optimized": "optimized/marvel/marvel-loki-black-white.webp",
+      "original": "wallpapers/marvel/marvel-loki-black-white.jpg"
     },
     {
       "file": "marvel-loki-god-of-mischief-wallpaper.jpg",
@@ -441,6 +511,13 @@
       "thumbnail": "thumbnails/marvel/marvel-loki-god-of-mischief.webp",
       "optimized": "optimized/marvel/marvel-loki-god-of-mischief.webp",
       "original": "wallpapers/marvel/marvel-loki-god-of-mischief.jpg"
+    },
+    {
+      "file": "marvel-loki-throne.jpg",
+      "title": "Loki Throne",
+      "thumbnail": "thumbnails/marvel/marvel-loki-throne.webp",
+      "optimized": "optimized/marvel/marvel-loki-throne.webp",
+      "original": "wallpapers/marvel/marvel-loki-throne.jpg"
     },
     {
       "file": "marvel-spider-gwen-stacy-wallpaper.jpg",
@@ -464,11 +541,39 @@
       "original": "wallpapers/marvel/marvel-spider-man-miles-morales.jpg"
     },
     {
+      "file": "marvel-spiderman-animated.jpg",
+      "title": "Spiderman Animated",
+      "thumbnail": "thumbnails/marvel/marvel-spiderman-animated.webp",
+      "optimized": "optimized/marvel/marvel-spiderman-animated.webp",
+      "original": "wallpapers/marvel/marvel-spiderman-animated.jpg"
+    },
+    {
+      "file": "marvel-spiderman-carnage.jpg",
+      "title": "Spiderman Carnage",
+      "thumbnail": "thumbnails/marvel/marvel-spiderman-carnage.webp",
+      "optimized": "optimized/marvel/marvel-spiderman-carnage.webp",
+      "original": "wallpapers/marvel/marvel-spiderman-carnage.jpg"
+    },
+    {
       "file": "marvel-spiderman-spiderverse.jpeg",
       "title": "Spiderman Spiderverse",
       "thumbnail": "thumbnails/marvel/marvel-spiderman-spiderverse.webp",
       "optimized": "optimized/marvel/marvel-spiderman-spiderverse.webp",
       "original": "wallpapers/marvel/marvel-spiderman-spiderverse.jpeg"
+    },
+    {
+      "file": "marvel-spiderman-venom-2.jpg",
+      "title": "Spiderman Venom 2",
+      "thumbnail": "thumbnails/marvel/marvel-spiderman-venom-2.webp",
+      "optimized": "optimized/marvel/marvel-spiderman-venom-2.webp",
+      "original": "wallpapers/marvel/marvel-spiderman-venom-2.jpg"
+    },
+    {
+      "file": "marvel-spiderman-venom.jpg",
+      "title": "Spiderman Venom",
+      "thumbnail": "thumbnails/marvel/marvel-spiderman-venom.webp",
+      "optimized": "optimized/marvel/marvel-spiderman-venom.webp",
+      "original": "wallpapers/marvel/marvel-spiderman-venom.jpg"
     },
     {
       "file": "marvel-thanos-mad-titan-wallpaper.jpg",
@@ -483,6 +588,13 @@
       "thumbnail": "thumbnails/marvel/marvel-thor-god-of-thunder-wallpaper.webp",
       "optimized": "optimized/marvel/marvel-thor-god-of-thunder-wallpaper.webp",
       "original": "wallpapers/marvel/marvel-thor-god-of-thunder-wallpaper.jpg"
+    },
+    {
+      "file": "marvel-thor-thunder-stormbreaker.jpg",
+      "title": "Thor Thunder Stormbreaker",
+      "thumbnail": "thumbnails/marvel/marvel-thor-thunder-stormbreaker.webp",
+      "optimized": "optimized/marvel/marvel-thor-thunder-stormbreaker.webp",
+      "original": "wallpapers/marvel/marvel-thor-thunder-stormbreaker.jpg"
     },
     {
       "file": "marvel-venom-black-bg.jpeg",
