@@ -50,6 +50,20 @@
       "original": "wallpapers/anime/anime-drgaonball-goku.jpg"
     },
     {
+      "file": "anime-gojo-limitless-infinity.jpg",
+      "title": "Anime Gojo Limitless Infinity",
+      "thumbnail": "thumbnails/anime/anime-gojo-limitless-infinity.webp",
+      "optimized": "optimized/anime/anime-gojo-limitless-infinity.webp",
+      "original": "wallpapers/anime/anime-gojo-limitless-infinity.jpg"
+    },
+    {
+      "file": "anime-gojo-strongest-sorcerer.jpg",
+      "title": "Anime Gojo Strongest Sorcerer",
+      "thumbnail": "thumbnails/anime/anime-gojo-strongest-sorcerer.webp",
+      "optimized": "optimized/anime/anime-gojo-strongest-sorcerer.webp",
+      "original": "wallpapers/anime/anime-gojo-strongest-sorcerer.jpg"
+    },
+    {
       "file": "anime-hatake-kakashi.png",
       "title": "Anime Hatake Kakashi",
       "thumbnail": "thumbnails/anime/anime-hatake-kakashi.webp",
@@ -132,6 +146,20 @@
       "thumbnail": "thumbnails/anime/anime-jjk-yuta.webp",
       "optimized": "optimized/anime/anime-jjk-yuta.webp",
       "original": "wallpapers/anime/anime-jjk-yuta.jpg"
+    },
+    {
+      "file": "anime-luffy-king-of-pirates.png",
+      "title": "Anime Luffy King Of Pirates",
+      "thumbnail": "thumbnails/anime/anime-luffy-king-of-pirates.webp",
+      "optimized": "optimized/anime/anime-luffy-king-of-pirates.webp",
+      "original": "wallpapers/anime/anime-luffy-king-of-pirates.png"
+    },
+    {
+      "file": "anime-luffy-pirate-king-dream.jpg",
+      "title": "Anime Luffy Pirate King Dream",
+      "thumbnail": "thumbnails/anime/anime-luffy-pirate-king-dream.webp",
+      "optimized": "optimized/anime/anime-luffy-pirate-king-dream.webp",
+      "original": "wallpapers/anime/anime-luffy-pirate-king-dream.jpg"
     },
     {
       "file": "anime-madara-six-paths.png",
@@ -593,6 +621,13 @@
       "thumbnail": "thumbnails/football/football-neymar-jr.webp",
       "optimized": "optimized/football/football-neymar-jr.webp",
       "original": "wallpapers/football/football-neymar-jr.jpeg"
+    },
+    {
+      "file": "football-raphinha-lamine-yamal.jpg",
+      "title": "Raphinha Lamine Yamal",
+      "thumbnail": "thumbnails/football/football-raphinha-lamine-yamal.webp",
+      "optimized": "optimized/football/football-raphinha-lamine-yamal.webp",
+      "original": "wallpapers/football/football-raphinha-lamine-yamal.jpg"
     },
     {
       "file": "football-ronaldo-calma.jpg",
