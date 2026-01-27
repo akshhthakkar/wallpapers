@@ -290,6 +290,13 @@
   ],
   "cars": [
     {
+      "file": "1967-mustang-fastback-classic.jpg",
+      "title": "1967 Mustang Fastback Classic",
+      "thumbnail": "thumbnails/cars/1967-mustang-fastback-classic.webp",
+      "optimized": "optimized/cars/1967-mustang-fastback-classic.webp",
+      "original": "wallpapers/cars/1967-mustang-fastback-classic.jpg"
+    },
+    {
       "file": "bmw-dark-silhouette.jpg",
       "title": "Bmw Dark Silhouette",
       "thumbnail": "thumbnails/cars/bmw-dark-silhouette.webp",
@@ -323,6 +330,13 @@
       "thumbnail": "thumbnails/cars/disney-lightning-mcqueen-cars.webp",
       "optimized": "optimized/cars/disney-lightning-mcqueen-cars.webp",
       "original": "wallpapers/cars/disney-lightning-mcqueen-cars.jpeg"
+    },
+    {
+      "file": "dodge-black-viper.jpg",
+      "title": "Dodge Black Viper",
+      "thumbnail": "thumbnails/cars/dodge-black-viper.webp",
+      "optimized": "optimized/cars/dodge-black-viper.webp",
+      "original": "wallpapers/cars/dodge-black-viper.jpg"
     },
     {
       "file": "dodge-hellcat-unleashed.jpg",
@@ -395,11 +409,32 @@
       "original": "wallpapers/cars/mercedes-benz-blackout-edition.jpg"
     },
     {
+      "file": "mustang-street-legend.jpg",
+      "title": "Mustang Street Legend",
+      "thumbnail": "thumbnails/cars/mustang-street-legend.webp",
+      "optimized": "optimized/cars/mustang-street-legend.webp",
+      "original": "wallpapers/cars/mustang-street-legend.jpg"
+    },
+    {
       "file": "mustang-v8-fury.jpg",
       "title": "Mustang V8 Fury",
       "thumbnail": "thumbnails/cars/mustang-v8-fury.webp",
       "optimized": "optimized/cars/mustang-v8-fury.webp",
       "original": "wallpapers/cars/mustang-v8-fury.jpg"
+    },
+    {
+      "file": "porsche-911-gt3-pure-performance.jpg",
+      "title": "Porsche 911 Gt3 Pure Performance",
+      "thumbnail": "thumbnails/cars/porsche-911-gt3-pure-performance.webp",
+      "optimized": "optimized/cars/porsche-911-gt3-pure-performance.webp",
+      "original": "wallpapers/cars/porsche-911-gt3-pure-performance.jpg"
+    },
+    {
+      "file": "redbull-f1-unstoppable.jpg",
+      "title": "Redbull F1 Unstoppable",
+      "thumbnail": "thumbnails/cars/redbull-f1-unstoppable.webp",
+      "optimized": "optimized/cars/redbull-f1-unstoppable.webp",
+      "original": "wallpapers/cars/redbull-f1-unstoppable.jpg"
     },
     {
       "file": "znxad3yqyznsuxd19ol2.jpeg",
