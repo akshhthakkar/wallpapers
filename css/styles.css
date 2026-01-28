@@ -13,8 +13,10 @@
   --color-primary: #00d9ff;
   --color-secondary: #ff0040;
   --color-accent: #ffd700;
-  --font-display: "Bebas Neue", sans-serif;
-  --font-body: "Outfit", sans-serif;
+  /* Use Impact as fallback - similar condensed style to Bebas Neue */
+  --font-display: "Bebas Neue", Impact, "Arial Narrow", sans-serif;
+  --font-body:
+    "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html {
