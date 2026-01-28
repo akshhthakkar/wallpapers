@@ -720,10 +720,53 @@ async function downloadCollection(collectionName) {
     document.body.removeChild(link);
     URL.revokeObjectURL(link.href);
 
+    // Track downloads for all wallpapers in the collection
+    trackCollectionDownloads(files);
+
     showNotification("ZIP downloaded!");
   } catch (error) {
     console.error("Download failed:", error);
     showNotification("Download failed!", "error");
+  }
+}
+
+// Track downloads for all wallpapers in a collection (bulk download)
+async function trackCollectionDownloads(files) {
+  if (!window.supabaseClient) return;
+
+  try {
+    // Process each wallpaper in parallel for efficiency
+    const trackingPromises = files.map(async (url) => {
+      const filename = url.split("/").pop();
+      const wallpaperId = filename
+        .replace(/\.(jpg|jpeg|png|webp)$/i, "")
+        .replace(/[_\s]+/g, "-")
+        .toLowerCase();
+
+      // Check if record exists
+      const { data: existing } = await window.supabaseClient
+        .from("wallpaper_stats")
+        .select("downloads")
+        .eq("id", wallpaperId)
+        .maybeSingle();
+
+      if (existing) {
+        await window.supabaseClient
+          .from("wallpaper_stats")
+          .update({ downloads: existing.downloads + 1 })
+          .eq("id", wallpaperId);
+      } else {
+        await window.supabaseClient
+          .from("wallpaper_stats")
+          .insert({ id: wallpaperId, views: 0, downloads: 1 });
+      }
+    });
+
+    await Promise.all(trackingPromises);
+    console.log(`⬇ Collection download tracked: ${files.length} wallpapers`);
+  } catch (error) {
+    // Silently handle errors - don't break the user experience
+    console.log("Collection download tracking skipped");
   }
 }
 
